@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movie Cruiser</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="src/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="heading">
+        <p>THE MOVIE DATABASE</p>
+    </div>
+    <div class="container" id="searchbar">
+    </div>
+    <div class="container" id="display">
+    </div>
+    <div class="container collection" id="displaycollections">
+    </div>
+    <div id="display1">
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Add a Collection</h4>
+                <p> Enter name of the collection</p>
+                <br>
+                <div class="input-field col s6">
+                    <input id="collec_name" type="text" class="validate">
+                    <label for="collec_name">Name</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="waves-effect waves-green btn-flat" id="Adding">Add</a>
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <h4>Delete a Collection</h4>
+                <p> Enter name of the collection you want to delete</p>
+                <br>
+                <div class="input-field col s6">
+                    <input id="collec_del" type="text" class="validate">
+                    <label for="collec_del">Name</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="waves-effect waves-green btn-flat" id="Deleting">Delete</a>
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <h4>Edit</h4>
+                <p> Enter name of the collection you want to edit</p>
+                <br>
+                <div class="input-field col s6">
+                    <input id="collec_edit1" type="text" class="validate" placeholder="Old Name">
+                    <input id="collec_edit2" type="text" class="validate" placeholder="New Name">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="waves-effect waves-green btn-flat" id="Editing">Edit</a>
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+        <div id="modal4" class="modal">
+            <div class="modal-content" id="final">
+                <h4>Which Collection do you want to add this movie to</h4>
+                <p>Here are the List of Existing collections</p>
+                <br>
+                <a class='dropdown-button btn' href='#' id="listprint">Collection List</a>
+                <div class="collection" id="listprint1">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="src/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="dist/bundle.js"></script>
+    <script src="src/js/modal.js"></script>
+</body>
+
+</html>
